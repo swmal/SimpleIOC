@@ -137,5 +137,17 @@ namespace SimpleIOC.Tests
             var results = container.ResolveAll(typeof(ITestInterface2));
             Assert.AreEqual(2, results.Count());
         }
+
+        [TestMethod]
+        public void Should_Return_An_Array_Containing_Two_Items_When_Resolving_All_Using_Generics()
+        {
+            var containerBuilder = ContainerBuilder.CreateBuilder();
+            containerBuilder.Register<ITestInterface2>().ImplementedBy<TestInterface2Impl>();
+            containerBuilder.Register<ITestInterface2>().ImplementedBy<TestInterface2Impl2>();
+            var container = containerBuilder.Build();
+
+            var results = container.ResolveAll<ITestInterface2>();
+            Assert.AreEqual(2, results.Count());
+        }
     }
 }

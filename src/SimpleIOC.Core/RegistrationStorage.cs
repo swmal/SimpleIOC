@@ -10,16 +10,16 @@ namespace SimpleIOC.Core
     {
         private readonly ConcurrentDictionary<string, IRegistration> _registrations = new ConcurrentDictionary<string, IRegistration>();
 
-        public void AddOrUpdate(IRegistration registration)
-        {
-            AddOrUpdate(registration, string.Empty);
-        }
+        //public void AddOrUpdate(IRegistration registration)
+        //{
+        //    AddOrUpdate(registration, string.Empty);
+        //}
 
-        public void AddOrUpdate(IRegistration registration, string name)
-        {
-            var key = GetRegistrationKey(registration.Type, name);
-            _registrations.AddOrUpdate(key, registration, (k, v) => v);
-        }
+        //public void AddOrUpdate(IRegistration registration, string name)
+        //{
+        //    var key = GetRegistrationKey(registration.Type, name);
+        //    _registrations.AddOrUpdate(key, registration, (k, v) => v);
+        //}
 
         public IRegistration GetOrAdd(IRegistration registration)
         {

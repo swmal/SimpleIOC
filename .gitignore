@@ -2,7 +2,7 @@
 [Bb]in
 [Dd]ebug
 [Rr]elease
-TestResults.*
+TestResults
 *.user
 *.suo
 *.[Cc]ache

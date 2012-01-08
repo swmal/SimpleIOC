@@ -56,7 +56,11 @@ namespace SimpleIOC.Core
 
         public T[] ResolveAll<T>() where T : class
         {
-            throw new NotImplementedException();
+            return _configuration
+                        .DependencyResolver
+                        .ResolveAll(typeof(T))
+                        .Cast<T>()
+                        .ToArray();
         }
 
         internal RegistrationBase GetRegistrationOf(Type type)
