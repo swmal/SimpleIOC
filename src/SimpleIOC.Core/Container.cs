@@ -26,6 +26,12 @@ namespace SimpleIOC.Core
             return _configuration.RegistrationStorage.GetOrAdd(registration) as ITypeRegistration;
         }
 
+        internal ITypeRegistration Register(Type type, string name)
+        {
+            var registration = new TypeRegistration(type, this);
+            return _configuration.RegistrationStorage.GetOrAdd(registration, name) as ITypeRegistration;
+        }
+
         internal IComponentRegistration RegisterComponent<T>(Func<T> factoryMethod)
             where T : class
         {
@@ -47,6 +53,13 @@ namespace SimpleIOC.Core
         public object Resolve(Type type)
         {
             return _configuration.DependencyResolver.Resolve(type);
+        }
+
+        public T Resolve<T>(string name)
+            where T : class
+        {
+            var result = _configuration.DependencyResolver.Resolve(typeof(T), name) as T;
+            return result;
         }
 
         public object[] ResolveAll(Type type)

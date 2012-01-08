@@ -9,6 +9,7 @@ namespace SimpleIOC.Core
     {
         IContainer Build();
         ITypeRegistration Register<T>();
+        ITypeRegistration Register<T>(string name);
         ITypeRegistration Register(Type type);
         IComponentRegistration RegisterComponent<T>(Func<T> factoryMethod) where T : class;
     }

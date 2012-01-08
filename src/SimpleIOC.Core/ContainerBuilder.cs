@@ -26,6 +26,11 @@ namespace SimpleIOC.Core
             return _container.Register(typeof(T));
         }
 
+        ITypeRegistration IContainerBuilder.Register<T>(string name)
+        {
+            return _container.Register(typeof(T), name);
+        }
+
         ITypeRegistration IContainerBuilder.Register(Type type)
         {
             return _container.Register(type);

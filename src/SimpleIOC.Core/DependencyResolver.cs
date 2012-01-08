@@ -24,6 +24,16 @@ namespace SimpleIOC.Core
             return registration.GetImplementationOf();
         }
 
+        public object Resolve(Type type, string name)
+        {
+            var registration = _configuration.RegistrationStorage.Get(type, name) as RegistrationBase;
+            if (registration == null)
+            {
+                throw new InvalidOperationException("The requested type [" + type.FullName + "] was not present in the container");
+            }
+            return registration.GetImplementationOf();
+        }
+
 
         public object[] ResolveAll(Type type)
         {

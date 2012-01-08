@@ -123,7 +123,7 @@ namespace SimpleIOC.Tests
             var container = containerBuilder.Build();
             var expected = container.Resolve<TestInterface2Impl>();
             var result = container.Resolve<TestInterface2Impl>(); ;
-            Assert.AreNotEqual(expected, result);
+            Assert.AreNotSame(expected, result);
         }
 
         [TestMethod]
@@ -148,6 +148,18 @@ namespace SimpleIOC.Tests
 
             var results = container.ResolveAll<ITestInterface2>();
             Assert.AreEqual(2, results.Count());
+        }
+
+        [TestMethod]
+        public void Should_Resolve_By_Name()
+        {
+            var containerBuilder = ContainerBuilder.CreateBuilder();
+            containerBuilder.Register<ITestInterface2>("a").ImplementedBy<TestInterface2Impl>();
+            containerBuilder.Register<ITestInterface2>("b").ImplementedBy<TestInterface2Impl2>();
+            var container = containerBuilder.Build();
+
+            var result = container.Resolve<ITestInterface2>("a");
+            Assert.IsInstanceOfType(result, typeof(TestInterface2Impl));
         }
     }
 }
