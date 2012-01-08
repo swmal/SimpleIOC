@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5f49762c-a486-4bc7-b7f3-df3df47b5a87" name="Mats@MATSDATOR1 2012-01-08 11:13:06" runUser="MatsDator1\Mats" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8f4e77c5-bbe4-405a-a0f8-8a80e26343c7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mats_MATSDATOR1 2012-01-08 11_13_06">
+      <DeploymentItem filename="C:\Development\SimpleIOC\SimpleIOC.Core\bin\Debug\SimpleIOC.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-08T11:13:06.5440608+01:00" queuing="2012-01-08T11:13:06.7280713+01:00" start="2012-01-08T11:13:06.7890748+01:00" finish="2012-01-08T11:13:07.2681022+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Should_Throw_An_Exception_When_ServiceType_Is_Not_Assignable_From_Implementing_Type" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="a9a20814-67e6-a3ba-f2bf-f6266612a585">
+      <Execution id="52ef2aca-5d11-47ad-b26d-7a15935b3d9b" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Throw_An_Exception_When_ServiceType_Is_Not_Assignable_From_Implementing_Type" />
+    </UnitTest>
+    <UnitTest name="Should_Return_Different_Instances_With_No_Lifetime_Configuration" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="b7695e69-3aa4-1052-b80a-9ac26e1396c3">
+      <Execution id="edcb28cf-448f-4c8d-9165-2c340de3effb" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Return_Different_Instances_With_No_Lifetime_Configuration" />
+    </UnitTest>
+    <UnitTest name="Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="a1766c4b-3d90-ac14-0e4d-486abda2af87">
+      <Execution id="03546547-848c-4d96-9aa5-e1af1cfb0f2f" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration" />
+    </UnitTest>
+    <UnitTest name="Should_Resolve_Using_Greediest_Constructor" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="fe93e5ba-a045-333b-dc14-a259d7f30137">
+      <Execution id="b191bc87-be75-484b-a784-5f13b9aa4cc3" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Resolve_Using_Greediest_Constructor" />
+    </UnitTest>
+    <UnitTest name="Should_Throw_Exception_When_No_Registration_Exists" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="f375579f-1fd7-3809-8422-0bf706c6e23b">
+      <Execution id="6ee53dfb-d5e0-461d-be93-3101cd9e7e4a" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Throw_Exception_When_No_Registration_Exists" />
+    </UnitTest>
+    <UnitTest name="Should_Return_Same_Instance_With_Singleton_Lifetime_Transient" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="3d23e2e5-5324-758b-3ea3-e549aa9c62be">
+      <Execution id="36c6552f-5299-4e82-8cfa-1f5b314a79da" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Return_Same_Instance_With_Singleton_Lifetime_Transient" />
+    </UnitTest>
+    <UnitTest name="Should_Be_Able_To_Assign_A_Type_To_Itself" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="e1e48189-3ca1-6959-57e7-11c451585432">
+      <Execution id="7cf11540-2c72-4af9-9ccf-1fffecbe163d" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Be_Able_To_Assign_A_Type_To_Itself" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3d23e2e5-5324-758b-3ea3-e549aa9c62be" executionId="36c6552f-5299-4e82-8cfa-1f5b314a79da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1766c4b-3d90-ac14-0e4d-486abda2af87" executionId="03546547-848c-4d96-9aa5-e1af1cfb0f2f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9a20814-67e6-a3ba-f2bf-f6266612a585" executionId="52ef2aca-5d11-47ad-b26d-7a15935b3d9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7695e69-3aa4-1052-b80a-9ac26e1396c3" executionId="edcb28cf-448f-4c8d-9165-2c340de3effb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1e48189-3ca1-6959-57e7-11c451585432" executionId="7cf11540-2c72-4af9-9ccf-1fffecbe163d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f375579f-1fd7-3809-8422-0bf706c6e23b" executionId="6ee53dfb-d5e0-461d-be93-3101cd9e7e4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe93e5ba-a045-333b-dc14-a259d7f30137" executionId="b191bc87-be75-484b-a784-5f13b9aa4cc3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="36c6552f-5299-4e82-8cfa-1f5b314a79da" testId="3d23e2e5-5324-758b-3ea3-e549aa9c62be" testName="Should_Return_Same_Instance_With_Singleton_Lifetime_Transient" computerName="MATSDATOR1" duration="00:00:00.0198312" startTime="2012-01-08T11:13:06.8090760+01:00" endTime="2012-01-08T11:13:07.1610961+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36c6552f-5299-4e82-8cfa-1f5b314a79da">
+    </UnitTestResult>
+    <UnitTestResult executionId="03546547-848c-4d96-9aa5-e1af1cfb0f2f" testId="a1766c4b-3d90-ac14-0e4d-486abda2af87" testName="Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration" computerName="MATSDATOR1" duration="00:00:00.0005215" startTime="2012-01-08T11:13:07.1630962+01:00" endTime="2012-01-08T11:13:07.1680965+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03546547-848c-4d96-9aa5-e1af1cfb0f2f">
+    </UnitTestResult>
+    <UnitTestResult executionId="52ef2aca-5d11-47ad-b26d-7a15935b3d9b" testId="a9a20814-67e6-a3ba-f2bf-f6266612a585" testName="Should_Throw_An_Exception_When_ServiceType_Is_Not_Assignable_From_Implementing_Type" computerName="MATSDATOR1" duration="00:00:00.0102945" startTime="2012-01-08T11:13:07.1690966+01:00" endTime="2012-01-08T11:13:07.1840974+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52ef2aca-5d11-47ad-b26d-7a15935b3d9b">
+    </UnitTestResult>
+    <UnitTestResult executionId="edcb28cf-448f-4c8d-9165-2c340de3effb" testId="b7695e69-3aa4-1052-b80a-9ac26e1396c3" testName="Should_Return_Different_Instances_With_No_Lifetime_Configuration" computerName="MATSDATOR1" duration="00:00:00.0002921" startTime="2012-01-08T11:13:07.1870976+01:00" endTime="2012-01-08T11:13:07.1910978+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edcb28cf-448f-4c8d-9165-2c340de3effb">
+    </UnitTestResult>
+    <UnitTestResult executionId="7cf11540-2c72-4af9-9ccf-1fffecbe163d" testId="e1e48189-3ca1-6959-57e7-11c451585432" testName="Should_Be_Able_To_Assign_A_Type_To_Itself" computerName="MATSDATOR1" duration="00:00:00.0004461" startTime="2012-01-08T11:13:07.1930979+01:00" endTime="2012-01-08T11:13:07.1980982+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cf11540-2c72-4af9-9ccf-1fffecbe163d">
+    </UnitTestResult>
+    <UnitTestResult executionId="6ee53dfb-d5e0-461d-be93-3101cd9e7e4a" testId="f375579f-1fd7-3809-8422-0bf706c6e23b" testName="Should_Throw_Exception_When_No_Registration_Exists" computerName="MATSDATOR1" duration="00:00:00.0005899" startTime="2012-01-08T11:13:07.2000983+01:00" endTime="2012-01-08T11:13:07.2050986+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ee53dfb-d5e0-461d-be93-3101cd9e7e4a">
+    </UnitTestResult>
+    <UnitTestResult executionId="b191bc87-be75-484b-a784-5f13b9aa4cc3" testId="fe93e5ba-a045-333b-dc14-a259d7f30137" testName="Should_Resolve_Using_Greediest_Constructor" computerName="MATSDATOR1" duration="00:00:00.0003557" startTime="2012-01-08T11:13:07.2070987+01:00" endTime="2012-01-08T11:13:07.2120990+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b191bc87-be75-484b-a784-5f13b9aa4cc3">
+    </UnitTestResult>
+  </Results>
+</TestRun>

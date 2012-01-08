@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7acf5993-1001-4d23-8029-d55055c206bf" name="Mats@MATSDATOR1 2012-01-08 11:28:19" runUser="MatsDator1\Mats" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8f4e77c5-bbe4-405a-a0f8-8a80e26343c7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mats_MATSDATOR1 2012-01-08 11_28_19">
+      <DeploymentItem filename="C:\Development\SimpleIOC\SimpleIOC.Core\bin\Debug\SimpleIOC.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-08T11:28:19.6036521+01:00" queuing="2012-01-08T11:28:23.5728791+01:00" start="2012-01-08T11:28:23.6238820+01:00" finish="2012-01-08T11:28:24.2589183+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="2" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Should_Throw_An_Exception_When_Implementation_Does_Not_" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="8aa5fd9d-a802-19a0-1908-b1450b0fbcff">
+      <Execution id="ac6a18b5-04d5-4e52-8fdf-b85e16cf5d1f" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Throw_An_Exception_When_Implementation_Does_Not_" />
+    </UnitTest>
+    <UnitTest name="Should_Return_Different_Instances_With_No_Lifetime_Configuration" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="b7695e69-3aa4-1052-b80a-9ac26e1396c3">
+      <Execution id="8d16e456-db69-41f0-90b7-d3c5dab25e8b" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Return_Different_Instances_With_No_Lifetime_Configuration" />
+    </UnitTest>
+    <UnitTest name="Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="a1766c4b-3d90-ac14-0e4d-486abda2af87">
+      <Execution id="717dd440-c39c-4169-aa61-42631c80c6e5" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration" />
+    </UnitTest>
+    <UnitTest name="Should_Throw_Exception_When_No_Registration_Exists" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="f375579f-1fd7-3809-8422-0bf706c6e23b">
+      <Execution id="4c33b0cb-4356-421b-b77e-9e0d3aab1f7c" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Throw_Exception_When_No_Registration_Exists" />
+    </UnitTest>
+    <UnitTest name="Should_Return_Same_Instance_With_Singleton_Lifetime_Transient" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="3d23e2e5-5324-758b-3ea3-e549aa9c62be">
+      <Execution id="44fc43de-31e8-4754-ab69-c669ac984667" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Return_Same_Instance_With_Singleton_Lifetime_Transient" />
+    </UnitTest>
+    <UnitTest name="Should_Resolve_Using_Greediest_Constructor" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="fe93e5ba-a045-333b-dc14-a259d7f30137">
+      <Execution id="e8c4668d-978b-4071-b535-bc075f8c40cf" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Resolve_Using_Greediest_Constructor" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3d23e2e5-5324-758b-3ea3-e549aa9c62be" executionId="44fc43de-31e8-4754-ab69-c669ac984667" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8aa5fd9d-a802-19a0-1908-b1450b0fbcff" executionId="ac6a18b5-04d5-4e52-8fdf-b85e16cf5d1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1766c4b-3d90-ac14-0e4d-486abda2af87" executionId="717dd440-c39c-4169-aa61-42631c80c6e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7695e69-3aa4-1052-b80a-9ac26e1396c3" executionId="8d16e456-db69-41f0-90b7-d3c5dab25e8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f375579f-1fd7-3809-8422-0bf706c6e23b" executionId="4c33b0cb-4356-421b-b77e-9e0d3aab1f7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe93e5ba-a045-333b-dc14-a259d7f30137" executionId="e8c4668d-978b-4071-b535-bc075f8c40cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="44fc43de-31e8-4754-ab69-c669ac984667" testId="3d23e2e5-5324-758b-3ea3-e549aa9c62be" testName="Should_Return_Same_Instance_With_Singleton_Lifetime_Transient" computerName="MATSDATOR1" duration="00:00:00.0706445" startTime="2012-01-08T11:28:23.6438831+01:00" endTime="2012-01-08T11:28:24.0509064+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44fc43de-31e8-4754-ab69-c669ac984667">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SimpleIOC.Tests.ContainerTests.Should_Return_Same_Instance_With_Singleton_Lifetime_Transient threw exception: 
+System.InvalidOperationException: Implementing type [SimpleIOC.Tests.ContainerTests+TestInterfaceImpl] is not assignable from [SimpleIOC.Tests.ContainerTests+ITestInterface1]</Message>
+          <StackTrace>    at SimpleIOC.Core.Registration.ImplementedBy(Type type) in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 34
+   at SimpleIOC.Core.Registration.ImplementedBy[T]() in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 27
+   at SimpleIOC.Tests.ContainerTests.Should_Return_Same_Instance_With_Singleton_Lifetime_Transient() in C:\Development\SimpleIOC\SimpleIOC.Tests\ContainerTests.cs:line 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ac6a18b5-04d5-4e52-8fdf-b85e16cf5d1f" testId="8aa5fd9d-a802-19a0-1908-b1450b0fbcff" testName="Should_Throw_An_Exception_When_Implementation_Does_Not_" computerName="MATSDATOR1" duration="00:00:00.0005117" startTime="2012-01-08T11:28:24.0509064+01:00" endTime="2012-01-08T11:28:24.0629071+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac6a18b5-04d5-4e52-8fdf-b85e16cf5d1f">
+    </UnitTestResult>
+    <UnitTestResult executionId="717dd440-c39c-4169-aa61-42631c80c6e5" testId="a1766c4b-3d90-ac14-0e4d-486abda2af87" testName="Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration" computerName="MATSDATOR1" duration="00:00:00.0017995" startTime="2012-01-08T11:28:24.0639072+01:00" endTime="2012-01-08T11:28:24.0719076+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="717dd440-c39c-4169-aa61-42631c80c6e5">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SimpleIOC.Tests.ContainerTests.Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration threw exception: 
+System.InvalidOperationException: Implementing type [SimpleIOC.Tests.ContainerTests+TestInterfaceImpl] is not assignable from [SimpleIOC.Tests.ContainerTests+ITestInterface1]</Message>
+          <StackTrace>    at SimpleIOC.Core.Registration.ImplementedBy(Type type) in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 34
+   at SimpleIOC.Core.Registration.ImplementedBy[T]() in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 27
+   at SimpleIOC.Tests.ContainerTests.Should_Return_Same_Instance_With_Singleton_Lifetime_Configuration() in C:\Development\SimpleIOC\SimpleIOC.Tests\ContainerTests.cs:line 90
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8d16e456-db69-41f0-90b7-d3c5dab25e8b" testId="b7695e69-3aa4-1052-b80a-9ac26e1396c3" testName="Should_Return_Different_Instances_With_No_Lifetime_Configuration" computerName="MATSDATOR1" duration="00:00:00.0025860" startTime="2012-01-08T11:28:24.0729077+01:00" endTime="2012-01-08T11:28:24.0859084+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d16e456-db69-41f0-90b7-d3c5dab25e8b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SimpleIOC.Tests.ContainerTests.Should_Return_Different_Instances_With_No_Lifetime_Configuration threw exception: 
+System.InvalidOperationException: Implementing type [SimpleIOC.Tests.ContainerTests+TestInterfaceImpl] is not assignable from [SimpleIOC.Tests.ContainerTests+ITestInterface1]</Message>
+          <StackTrace>    at SimpleIOC.Core.Registration.ImplementedBy(Type type) in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 34
+   at SimpleIOC.Core.Registration.ImplementedBy[T]() in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 27
+   at SimpleIOC.Tests.ContainerTests.Should_Return_Different_Instances_With_No_Lifetime_Configuration() in C:\Development\SimpleIOC\SimpleIOC.Tests\ContainerTests.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c33b0cb-4356-421b-b77e-9e0d3aab1f7c" testId="f375579f-1fd7-3809-8422-0bf706c6e23b" testName="Should_Throw_Exception_When_No_Registration_Exists" computerName="MATSDATOR1" duration="00:00:00.0013060" startTime="2012-01-08T11:28:24.0869085+01:00" endTime="2012-01-08T11:28:24.0989092+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c33b0cb-4356-421b-b77e-9e0d3aab1f7c">
+    </UnitTestResult>
+    <UnitTestResult executionId="e8c4668d-978b-4071-b535-bc075f8c40cf" testId="fe93e5ba-a045-333b-dc14-a259d7f30137" testName="Should_Resolve_Using_Greediest_Constructor" computerName="MATSDATOR1" duration="00:00:00.0023490" startTime="2012-01-08T11:28:24.1059096+01:00" endTime="2012-01-08T11:28:24.1129100+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8c4668d-978b-4071-b535-bc075f8c40cf">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SimpleIOC.Tests.ContainerTests.Should_Resolve_Using_Greediest_Constructor threw exception: 
+System.InvalidOperationException: Implementing type [SimpleIOC.Tests.ContainerTests+TestInterfaceImpl] is not assignable from [SimpleIOC.Tests.ContainerTests+ITestInterface1]</Message>
+          <StackTrace>    at SimpleIOC.Core.Registration.ImplementedBy(Type type) in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 34
+   at SimpleIOC.Core.Registration.ImplementedBy[T]() in C:\Development\SimpleIOC\SimpleIOC.Core\Registration.cs:line 27
+   at SimpleIOC.Tests.ContainerTests.Should_Resolve_Using_Greediest_Constructor() in C:\Development\SimpleIOC\SimpleIOC.Tests\ContainerTests.cs:line 52
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

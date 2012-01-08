@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="af692de4-b012-416b-8925-7260e8d68c6d" name="Mats@MATSDATOR1 2012-01-08 11:27:00" runUser="MatsDator1\Mats" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8f4e77c5-bbe4-405a-a0f8-8a80e26343c7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mats_MATSDATOR1 2012-01-08 11_27_00">
+      <DeploymentItem filename="C:\Development\SimpleIOC\SimpleIOC.Core\bin\Debug\SimpleIOC.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-08T11:27:00.9391527+01:00" queuing="2012-01-08T11:27:02.2602283+01:00" start="2012-01-08T11:27:02.4642399+01:00" finish="2012-01-08T11:27:54.9462417+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Should_Throw_An_Exception_When_Implementation_Does_Not_" storage="c:\development\simpleioc\simpleioc.tests\bin\debug\simpleioc.tests.dll" id="8aa5fd9d-a802-19a0-1908-b1450b0fbcff">
+      <Execution id="f2504ec8-b1ff-41f2-b628-3703399b8dee" />
+      <TestMethod codeBase="C:/Development/SimpleIOC/SimpleIOC.Tests/bin/Debug/SimpleIOC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SimpleIOC.Tests.ContainerTests, SimpleIOC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Should_Throw_An_Exception_When_Implementation_Does_Not_" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8aa5fd9d-a802-19a0-1908-b1450b0fbcff" executionId="f2504ec8-b1ff-41f2-b628-3703399b8dee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f2504ec8-b1ff-41f2-b628-3703399b8dee" testId="8aa5fd9d-a802-19a0-1908-b1450b0fbcff" testName="Should_Throw_An_Exception_When_Implementation_Does_Not_" computerName="MATSDATOR1" duration="00:00:50.9125872" startTime="2012-01-08T11:27:02.6442502+01:00" endTime="2012-01-08T11:27:54.7922329+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2504ec8-b1ff-41f2-b628-3703399b8dee">
+    </UnitTestResult>
+  </Results>
+</TestRun>
