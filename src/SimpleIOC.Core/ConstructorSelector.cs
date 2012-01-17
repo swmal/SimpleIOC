@@ -8,9 +8,16 @@ namespace SimpleIOC.Core
 {
     public class ConstructorSelector : IConstructorSelector
     {
+        private Dictionary<Type, ConstructorInfo> _cachedConstructors = new Dictionary<Type, ConstructorInfo>();
+        private readonly object _syncRoot = new object();
+
         ConstructorInfo IConstructorSelector.Select(Type type, Container container)
         {
-            return GetGreediestResolvableConstructor(type, container);
+            if (!_cachedConstructors.ContainsKey(type))
+            {
+                return GetGreediestResolvableConstructor(type, container);
+            }
+            return _cachedConstructors[type];
         }
 
         private ConstructorInfo GetGreediestResolvableConstructor(Type type, Container container)
@@ -20,6 +27,10 @@ namespace SimpleIOC.Core
             {
                 if (IsResolvable(constructor, container))
                 {
+                    lock (_syncRoot)
+                    {
+                        _cachedConstructors[type] = constructor;
+                    }
                     return constructor;
                 }
             }
