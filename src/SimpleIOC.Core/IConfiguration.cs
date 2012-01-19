@@ -10,5 +10,6 @@ namespace SimpleIOC.Core
         IConstructorSelector ConstructorSelector { get; }
         IDependencyResolver DependencyResolver { get; }
         IRegistrationStorage RegistrationStorage { get; }
+        ITypeActivator TypeActivator { get; }
     }
 }

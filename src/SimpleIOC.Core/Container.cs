@@ -22,13 +22,13 @@ namespace SimpleIOC.Core
 
         internal ITypeRegistration Register(Type type)
         {
-            var registration = new TypeRegistration(type, this);
+            var registration = new TypeRegistration(type, this, _configuration.TypeActivator);
             return _configuration.RegistrationStorage.GetOrAdd(registration) as ITypeRegistration;
         }
 
         internal ITypeRegistration Register(Type type, string name)
         {
-            var registration = new TypeRegistration(type, this);
+            var registration = new TypeRegistration(type, this, _configuration.TypeActivator);
             return _configuration.RegistrationStorage.GetOrAdd(registration, name) as ITypeRegistration;
         }
 

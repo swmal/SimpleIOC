@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Reflection;
+using SimpleIOC.Core.Activation;
 
 namespace SimpleIOC.Core
 {
@@ -14,7 +15,7 @@ namespace SimpleIOC.Core
         private readonly List<Type> _implementingTypes;
 
         public TypeRegistration(Type type, Container container)
-            : this(type, container, new TypeActivator(container, new ConstructorSelector()))
+            : this(type, container, new DefaultTypeActivator(container, new ConstructorSelector()))
         {
 
         }
@@ -49,7 +50,7 @@ namespace SimpleIOC.Core
         internal override object GetImplementationOf()
         {
             if (Lifetime == Lifetime.Singleton && _instance != null)
-            {
+            { 
                 return _instance;
             }
             _instance = _typeActivator.CreateInstance(_implementingTypes.First());
