@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activation\ExpressionActivator.cs" />
     <Compile Include="Activation\FormatterServicesActivator.cs" />
     <Compile Include="ComponentRegistration.cs" />
     <Compile Include="ConstructorSelector.cs" />

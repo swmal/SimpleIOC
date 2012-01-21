@@ -15,7 +15,7 @@ namespace SimpleIOC.Core.Activation
             _constructorSelector = constructorSelector;
             _container = container;
         }
-        public object CreateInstance(Type type)
+        public virtual object CreateInstance(Type type)
         {
             var constructor = _constructorSelector.Select(type, _container);
             var argList = new List<object>();

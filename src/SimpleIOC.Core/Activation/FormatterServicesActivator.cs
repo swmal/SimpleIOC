@@ -9,18 +9,19 @@ namespace SimpleIOC.Core.Activation
     /// <summary>
     /// This activator is about 20% faster than the <see cref="DefaultTypeActivator"/>, but works only on .NET 40
     /// </summary>
-    public class FormatterServicesActivator : ITypeActivator
+    public class FormatterServicesActivator : DefaultTypeActivator
     {
         private readonly IConstructorSelector _constructorSelector;
         private readonly Container _container;
 
         public FormatterServicesActivator(Container container, IConstructorSelector constructorSelector)
+            : base(container, constructorSelector)
         {
             _constructorSelector = constructorSelector;
             _container = container;
         }
 
-        public object CreateInstance(Type type)
+        public override object CreateInstance(Type type)
         {
 #if DOTNET40
             var instance = FormatterServices.GetUninitializedObject(type);
@@ -34,7 +35,7 @@ namespace SimpleIOC.Core.Activation
             constructor.Invoke(instance, argList.ToArray());
             return instance;
 #else
-            return null;
+            return base.CreateInstance(type);
 #endif
         }
     }

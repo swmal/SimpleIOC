@@ -19,7 +19,7 @@ namespace SimpleIOC.Core
             _dependencyResolver = new DependencyResolver(this);
             _registrationStorage = new RegistrationStorage();
 #if DOTNET40
-            _typeActivator = new FormatterServicesActivator(container, _constructorSelector);
+            _typeActivator = new ExpressionActivator(container, _constructorSelector);
 #else
             _typeActivator = new DefaultTypeActivator(container, _constructorSelector);
 #endif

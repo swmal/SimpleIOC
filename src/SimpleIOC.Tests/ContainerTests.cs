@@ -173,5 +173,17 @@ namespace SimpleIOC.Tests
             var result = container.Resolve<ITestInterface2>("a");
             Assert.IsInstanceOfType(result, typeof(TestInterface2Impl));
         }
+
+        [TestMethod]
+        public void PerformanceTest()
+        {
+            var startTime = DateTime.Now;
+            for (int x = 0; x < 50000; x++)
+            {
+                var item = _container.Resolve<ITestInterface1>();
+            }
+            var result = DateTime.Now.Subtract(startTime);
+            var ms = result.TotalMilliseconds;
+        }
     }
 }
