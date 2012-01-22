@@ -6,26 +6,22 @@ using SimpleIOC.Core.Activation;
 
 namespace SimpleIOC.Core
 {
-    public class DefaultConfiguration : IConfiguration
+    public class DefaultConfiguration : IConfigurable
     {
-        private readonly IConstructorSelector _constructorSelector;
-        private readonly IDependencyResolver _dependencyResolver;
-        private readonly IRegistrationStorage _registrationStorage;
-        private readonly ITypeActivator _typeActivator;
+        private IConstructorSelector _constructorSelector;
+        private IDependencyResolver _dependencyResolver;
+        private IRegistrationStorage _registrationStorage;
+        private ITypeActivator _typeActivator;
 
         private DefaultConfiguration(Container container)
         {
             _constructorSelector = new ConstructorSelector();
             _dependencyResolver = new DependencyResolver(this);
             _registrationStorage = new RegistrationStorage();
-#if DOTNET40
             _typeActivator = new ExpressionActivator(container, _constructorSelector);
-#else
-            _typeActivator = new DefaultTypeActivator(container, _constructorSelector);
-#endif
         }
 
-        public static IConfiguration Create(Container container)
+        public static IConfigurable Create(Container container)
         {
             return new DefaultConfiguration(container);
         }
@@ -48,6 +44,30 @@ namespace SimpleIOC.Core
         public ITypeActivator TypeActivator
         {
             get { return _typeActivator; }
+        }
+
+        IConfigurable IConfigurable.SetTypeActivator(ITypeActivator typeActivator)
+        {
+            _typeActivator = typeActivator;
+            return this;
+        }
+
+        IConfigurable IConfigurable.SetConstructorSelector(IConstructorSelector constructorSelector)
+        {
+            _constructorSelector = constructorSelector;
+            return this;
+        }
+
+        IConfigurable IConfigurable.SetRegistrationStorage(IRegistrationStorage registrationStorage)
+        {
+            _registrationStorage = registrationStorage;
+            return this;
+        }
+
+        IConfigurable IConfigurable.SetDependecyResolver(IDependencyResolver dependencyResolver)
+        {
+            _dependencyResolver = dependencyResolver;
+            return this;
         }
     }
 }

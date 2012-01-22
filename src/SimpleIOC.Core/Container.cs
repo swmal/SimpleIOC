@@ -8,14 +8,14 @@ namespace SimpleIOC.Core
 {
     public class Container : IContainer
     {
-        private readonly IConfiguration _configuration;
+        private IConfiguration _configuration;
 
         public Container()
         {
             _configuration = DefaultConfiguration.Create(this);
         }
 
-        public Container(IConfiguration configuration)
+        public void Configure(IConfiguration configuration)
         {
             _configuration = configuration;
         }

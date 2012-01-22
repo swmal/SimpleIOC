@@ -49,6 +49,7 @@
     <Compile Include="DefaultConfiguration.cs" />
     <Compile Include="DependencyResolver.cs" />
     <Compile Include="IComponentRegistration.cs" />
+    <Compile Include="IConfigurable.cs" />
     <Compile Include="IConfiguration.cs" />
     <Compile Include="IConstructorSelector.cs" />
     <Compile Include="IContainer.cs" />

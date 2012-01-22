@@ -18,7 +18,14 @@ namespace SimpleIOC.Core
 
         public static IContainerBuilder CreateBuilder()
         {
-            return new ContainerBuilder(new Container());
+            return CreateBuilder(c => DefaultConfiguration.Create(c));
+        }
+
+        public static IContainerBuilder CreateBuilder(Func<Container, IConfigurable> configFactory)
+        {
+            var container = new Container();
+            container.Configure(configFactory.Invoke(container));
+            return new ContainerBuilder(container);
         }
 
         ITypeRegistration IContainerBuilder.Register<T>()
